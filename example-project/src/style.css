@@ -1,5 +1,8 @@
 * {
 	scroll-behavior: smooth;
+	margin:0;
+	padding:0;
+	/* border:1px solid black; */
 }
 
 #PageOne {
@@ -9,8 +12,33 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-bottom: 550px;
-	
+	height:100%;
+	width:auto;
+}
+.container {
+	padding:25px 25px 0 100px;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:10px;
+	vertical-align:middle;
+}
+
+#los-angeles-mountain-banner {
+	text-align:center;
+	font-size:60px;
+	font-family:'Oswald';
+	text-shadow:0 0 5px white;
+	margin-left:150px;
+}
+
+#los-angeles-mountain-banner p:nth-child(2) {
+	color:darkslategrey;
+	text-shadow:0 0 5px white;
+}
+
+#los-angeles-mountain-banner p:nth-child(3) {
+	font-size:45px;
+	text-shadow:0 0 5px white;
 }
 
 .background-image {
@@ -20,29 +48,36 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	height:74%;
+	width:auto;
 }
 
 .schedule-img {
-	background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/01/Alp_mountains_covered_with_snow.jpg");
+	/* background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/01/Alp_mountains_covered_with_snow.jpg"); */
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding-top:80px;
-	padding-bottom:150px;
+	height:85%;
 }
 
 #schedule {
 	border: 1px solid white;
 	background-color:white;
 	opacity:0.9;
+	padding:20px;
+}
+
+#schedule p:nth-child(1), #schedule p:nth-child(2), #schedule p:nth-child(3), #schedule p:nth-child(4), #schedule p:nth-child(5) {
+	padding:10px;
 }
 
 #img-panel {
 	background-color:darkslategrey;
 	opacity:0.9;
-	padding:1.4em;
+	padding:30px;
 	text-align:center;
 }
 
@@ -58,32 +93,40 @@ h3.header2 {
 }
 
 #first-text {
-	padding-bottom:380px;
-	padding-left:100px;
-	font-size:0.9em;
+	font-size:30px;
+	padding-top:250px;
 }
 
 #second-text {
-	padding-top:50px;
+	padding-top:25px;
 	padding-bottom:20px;
-	padding-left:250px;
-	font-size:0.9em;
+	padding-left:50px;
+	font-size:30px;
 }
 
 footer {
 	background-color:darkslategrey;
+	padding:5px;
+	margin-top:60px;
 }
 
 .panel-imgs {
 	height:100px;
 	width:150px;
+	margin:5px;
+}
+
+#pageThree {
+	height:90%;
 }
 
 .sm-mountain {
-	padding-top:10px;
-	position:absolute;
-	display:inline-block;
-	padding:10px 0px 0px 0px;
+	padding:20px;
+	display:flex;
+}
+
+.sm-mountain img {
+	margin-right:10px;
 }
 
 #los-angeles-mountains {
@@ -98,7 +141,6 @@ footer {
 }
 
 #footer-los-angeles-mountains {
-	display:inline-block;
 	margin:0;
 	padding:0;
 	font-weight:700;
@@ -111,50 +153,54 @@ footer {
 
 #copyright {
 	text-align:right;
-	padding-bottom:20px;
-	padding-top:20px;
-	margin:0;
+	margin:auto 0;
 	color:slategray;
 	font-size:0.9em;
 	font-weight:600;
+	padding:20px;
 }
 
 .mountain-nav {
 	height: 40px;
 	width: 40px;
 	border-radius: 100px;
-	margin-bottom:20%;
 	border:1px solid grey;
-	
 }
 
 b {
 	font-family:"Oswald";
+	font-size:20px;
 }
 
 .mountain1 {
-	font-size:1.2em;
-	color:darkslategray;
+	font-size:1.5em;
+	color:darkslategrey;
+}
+
+.mountain1:hover {
 	text-decoration:underline;
+	color:darkslategray;
 }
 
 .mountain2 {
-	font-size:1.2em;
-	color:gray;
+	font-size:1.5em;
+	color:grey;
+}
+
+a {
+	text-decoration:none;
 }
 
 .mountain2:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 	color:gray;
 }
 
 .footer-mountain-nav {
-	background-color:slategray;
 	height: 40px;
 	width: 40px;
 	border-radius: 100px;
-	margin-bottom:20%;
-	opacity:0.4;
+	opacity:0.75;
 }
 
  .mountains {
@@ -162,29 +208,35 @@ b {
 	color:grey;
 	padding-bottom:1px;
 	padding-top:5px;
+	height:auto;
+	padding:20px;
 }
 
 .history-team1 {
-	font-size:0.8em;
+	font-size:20px;
 	color:white;
 	font-weight:500;
 	text-decoration:underline;
 }
 
 .history-team2 {
-	font-size:0.8em;
+	font-size:20px;
 	color:darkslategrey;
 	font-weight:700;
 	text-decoration:underline;
 }
 
 .active {
-	background-color:gray;
+	background-color: grey;
 	padding-right:20px;
 	padding-left:20px;
-	padding-top:10px;
-	padding-bottom:18px;
-  margin:20px;
+	padding-top:33px;
+	padding-bottom:22px;
+	margin:20px;
+}
+.nonactive {
+	margin:25px;
+	text-decoration: none;
 }
 
 li {
@@ -192,8 +244,8 @@ li {
 	display:inline;
 }
 
-ul.history-team {
-	text-align:right;
+.history-team {
+	text-align:center;
 	padding:10px;
 }
 
@@ -205,13 +257,15 @@ ul.history-team {
 	font-size:4.0em;
 	letter-spacing:-5px;
 	opacity:0.7;
-	font-family:"Oswald"
+	font-family:"Oswald";
+	padding:5px;
 }
 
 .schedule-header {
 	padding-top:10px;
 	font-weight:bolder;
 	letter-spacing:-2px;
+	padding:10px;
 }
 
 @media (min-width: 1120px), (min-height: 630px) {
